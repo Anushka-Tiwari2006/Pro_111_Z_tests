@@ -47,12 +47,13 @@ print(third_std_dev_start,third_std_dev_end)
 
 fig = ff.create_distplot([mean_list],["Math_score"],show_hist = False)
 fig.add_trace(go.Scatter(x = [mean,mean], y = [0,0.20],mode = "lines",name = "Mean"))
-fig.add_trace(go.Scatter(x = [first_std_dev_start,first_std_dev_start], y = [0,0.20],mode = "lines",name = "St_dev_1_first"))
-fig.add_trace(go.Scatter(x = [first_std_dev_end,first_std_dev_end], y = [0,0.20],mode = "lines",name = "St_dev_1_end"))
-fig.add_trace(go.Scatter(x = [second_std_dev_start,second_std_dev_start], y = [0,0.20],mode = "lines",name = "St_dev_2_start"))
-fig.add_trace(go.Scatter(x = [second_std_dev_end,second_std_dev_end], y = [0,0.20],mode = "lines",name = "St_dev_2_end"))
-fig.add_trace(go.Scatter(x = [third_std_dev_start,third_std_dev_start], y = [0,0.20],mode = "lines",name = "St_dev_3_start"))
-fig.add_trace(go.Scatter(x = [third_std_dev_end,third_std_dev_end], y = [0,0.20],mode = "lines",name = "St_dev_3_end"))
+fig.add_trace(go.Scatter(x = [first_std_dev_start,first_std_dev_start], y = [0,0.20],mode = "lines",name = "Stdev 1 first"))
+fig.add_trace(go.Scatter(x = [first_std_dev_end,first_std_dev_end], y = [0,0.20],mode = "lines",name = "Stdev 1 end"))
+fig.add_trace(go.Scatter(x = [second_std_dev_start,second_std_dev_start], y = [0,0.20],mode = "lines",name = "Stdev 2 first"))
+fig.add_trace(go.Scatter(x = [second_std_dev_end,second_std_dev_end], y = [0,0.20],mode = "lines",name = "Stdev 2 end"))
+fig.add_trace(go.Scatter(x = [third_std_dev_start,third_std_dev_start], y = [0,0.20],mode = "lines",name = "Stdev 3 first"))
+fig.add_trace(go.Scatter(x = [third_std_dev_end,third_std_dev_end], y = [0,0.20],mode = "lines",name = "Stdev 3 end"))
+
 
 
 
